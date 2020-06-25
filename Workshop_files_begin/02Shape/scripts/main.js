@@ -1,5 +1,5 @@
 //changing individual properties with code and using setInterval
-var rotationSpeed = 0.04;
+/* var rotationSpeed = 0.04;
 var myOtherBox = document.getElementById('planetWater');
 
 function spin(){
@@ -12,4 +12,4 @@ function spin(){
 	
  }
 
-setInterval(spin, 16); //equivalent to 60 fps
+setInterval(spin, 16); //equivalent to 60 fps */
