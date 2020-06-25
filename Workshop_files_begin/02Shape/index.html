@@ -9,19 +9,16 @@
   </head>
   <body>
     <a-scene background="color: #333333">
-      <a-box id="myBox"
-        width="10"
-        height="10"
-        depth="6"
-        position='0 0 -20'
-        color="#87CEEB" 
-        shadow>
-      <a-box 
-      width ="5"
-      height = "5"
-      depth='5'
-      position='5 3 -20'
-      color="#87CEEB" >
+     <a-assets>
+          <img id="water" src="images/water.jpg" />
+          <img id="space" src="images/space.jpg"/>
+     </a-assets>
+
+
+      <a-sphere 
+      radius="5"
+      position="0 5 -3"
+      material = "src:#water" >
      <a-sphere 
       position="10 10 -20"
       radius="6"
@@ -29,11 +26,26 @@
       <a-sphere 
       position="15 15 -20"
       radius="6"
-      color="#FF6347">
-   <a-sphere 
+      color="#DB7093">
+      <a-sphere 
+      position="15 15 -20"
+      radius="6"
+       color="#FF6347">
+     <a-sphere 
       position="15 15 -5"
       radius="6"
       color="#FF6347">
+
+
+       <a-plane id="ground"
+        material="src:#space; repeat: 15 15"
+        position="0 0 -4" 
+        rotation="-90 0 0" 
+        width="100" 
+        height="100" 
+        color="#7BC8A4" 
+        shadow>
+      </a-plane> 
     
       </a-box>
     </a-scene>
