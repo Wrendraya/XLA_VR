@@ -18,14 +18,16 @@
      </a-assets>
 
 
-      <a-sphere 
+      <a-sphere id="planetWater"
       radius="10"
       position="0 5 -10"
       material = "src:#water" >
-     <a-sphere 
+
+     <a-sphere id="planetStar"
       position="10 10 -20"
       radius="6"
-      material = "src:#space">
+      material = "src:#space"
+      animation="property: rotation; to: 0 360 0; loop: true; dur: 10000" >
       <a-sphere 
       position="15 5 -20"
       radius="6"
