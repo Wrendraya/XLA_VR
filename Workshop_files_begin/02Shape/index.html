@@ -12,6 +12,9 @@
      <a-assets>
           <img id="water" src="images/water.jpg" />
           <img id="space" src="images/space.jpg"/>
+          <img id="mars" src="images/mars.jpg"/>
+          <img id="grass" src="images/grass.jpg"/>
+          <img id="brick" src="images/brick.jpg"/>
      </a-assets>
 
 
@@ -22,21 +25,20 @@
      <a-sphere 
       position="10 10 -20"
       radius="6"
-      material = "src:#space"
-      color="#DB7093">
+      material = "src:#space">
       <a-sphere 
       position="15 5 -20"
       radius="6"
-      color="#DB7093">
+      material = "src:#mars.jpg">
 
       <a-sphere 
       position="15 12 -20"
       radius="4"
-       color="#FF6347">
+      material = "src:#grass.jpg">
      <a-sphere 
       position="15 15 -10"
       radius="8"
-      color="#FF6347">
+      material = "src:#brick.jpg">
 
        <a-plane id="ground"
         material="src:#space; repeat: 20 20"
